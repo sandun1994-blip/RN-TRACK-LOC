@@ -39,7 +39,7 @@ export default function DestinationSearch() {
             setOriginPlace({data, details});
           }}
           query={{
-            key: "AIzaSyDLggQTsJIsBSDY7Ncgcu8pH-zmDqjMH58",
+            key: "",
             language: "en",
           }}
         />
@@ -52,7 +52,7 @@ export default function DestinationSearch() {
             setDestinationPlace({data, details});
           }}
           query={{
-            key: "AIzaSyDLggQTsJIsBSDY7Ncgcu8pH-zmDqjMH58",
+            key: "",
             language: "en",
           }}
         />
