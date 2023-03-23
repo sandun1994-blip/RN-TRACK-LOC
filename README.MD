@@ -1,0 +1,5 @@
+vector-icon
+
+android/app/build.gradle
+
+copy apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
