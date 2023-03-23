@@ -19,6 +19,8 @@ import {
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import HomeScreen from './src/screens/HomeScreen';
+import DestinationSearch from './src/screens/DestinationSearch';
+import SearchResults from './src/screens/SearchResults'
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -33,7 +35,9 @@ function App() {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <HomeScreen />
+      {/* <HomeScreen /> */}
+      {/* <DestinationSearch/> */}
+      <SearchResults/>
     </>
   );
 }
