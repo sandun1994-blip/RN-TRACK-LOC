@@ -1,20 +1,26 @@
 import React from "react";
-import {StyleSheet, Text, View} from "react-native";
+import {Pressable, StyleSheet, Text, View} from "react-native";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import Entypo from "react-native-vector-icons/Entypo";
+import {useNavigation} from "@react-navigation/native";
+
 export default function HomeSearch() {
+  const navigation = useNavigation();
+  const goToSearch = () => {
+    navigation.navigate("DestinationSearch");
+  };
   return (
     <>
-      <View style={styles.inputBox}>
-        <Text style={styles.inputText}>HomeSearch</Text>
+      <Pressable style={styles.inputBox} onPress={goToSearch}>
+        <Text style={styles.inputText}>Where to</Text>
 
         <View style={styles.timeContainer}>
-          <AntDesign name={'clockcircle'} size={16} />
+          <AntDesign name={"clockcircle"} size={16} />
           <Text>Now</Text>
           <MaterialIcons name={"keyboard-arrow-down"} size={16} />
         </View>
-      </View>
+      </Pressable>
 
       <View style={styles.row}>
         <View style={styles.iconContainer}>
