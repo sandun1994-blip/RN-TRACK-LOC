@@ -4,8 +4,7 @@
 2. amplify configure
 
 
-AKIA4SEHNZOWKGQZMPHV
-CRijqCSY5d0OikU+hn0JxbJtIaE7i/pCUzpAJP/y
+
 
 3. amplify init
 
